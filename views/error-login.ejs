@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Scribbotic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <h1>Scribbotic</h1>
+        </div>
+        <div class="nav-links">
+            <div class="link-1"><a href="/">Home</a></div>
+        </div>
+    </nav>
+
+    <form action="/users/login" method="post" class="login-form">
+        <h2>Login</h2>
+        <input type="text" name="email" placeholder="Username" required class="login-input"> <br>
+        <input type="password" name="password" placeholder="Password" required class="login-input"> <br>
+        <input type="submit" value="login" class="login-button">
+        <p class="error-login">The username or password you entered is incorrect</p>
+        <a href="/signup" class="signup-redirect">I don't have an account.</a>
+    </form>
+
+    <footer>
+        <p>Scribbotic</p>
+    </footer>
+</body>
+</html>

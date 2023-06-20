@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Scribbotic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <h1>Scribbotic</h1>
+        </div>
+        <div class="nav-links">
+            <div class="link-1"><a href="/">Home</a></div>
+        </div>
+    </nav>
+
+    <form action="/users" method="post" class="signup-form">
+        <h2>Create Account</h2>
+        <input type="text" name="name" placeholder="Enter your name" required class="login-input"> <br>
+        <input type="text" name="email" placeholder="Create a username" required class="login-input"> <br>
+        <input type="text" name="password" placeholder="Create a password" required class="login-input"> <br>
+        <input type="submit" value="Create" class="login-button">
+        <a href="/login" class="signup-redirect">I already have an account.</a>
+    </form>
+
+</body>
+</html>

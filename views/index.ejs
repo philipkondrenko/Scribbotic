@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Scribbotic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <h1>Scribbotic</h1>
+        </div>
+        <div class="nav-links">
+            <div class="link-1"><a href="/">Home</a></div>
+            <div class="link-2"><a href="/login">Login</a></div>
+            <div class="link-3"><a href="/signup">Sign Up</a></div>
+        </div>
+        <div class="responsive-nav">
+            <div class="link-1"><a href="/login">Login</a></div>
+        </div>
+    </nav>
+    
+    <div class="home-container">
+        <div class="centered">
+            <h1 id="header-text">Simple. Organized. Minimal.</h1>
+            <p>A note-taking app with minimalism in mind.</p>
+            <form action="/signup" method="get">
+                <input type="submit" value="Get Started" class="cta-button">
+            </form>
+        </div>
+    </div>
+    <div class="border"></div>
+    <div class="about-container">
+        <div class="centered">
+            <h1 id="header-text">About</h1>
+            <p>Scribbotic is a note-taking web app.</p>
+        </div>
+    </div>
+    <footer>
+        <p>Scribbotic</p>
+    </footer>
+</body>
+</html>

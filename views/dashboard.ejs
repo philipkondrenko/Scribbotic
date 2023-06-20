@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Scribbotic</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo" id="logo">
+            <h1>Scribbotic</h1>
+        </div>
+        <div class="dropdown">
+            <button class="link-3">Profile</button>
+            <div class="dropdown-options">
+              <a href="/dashboard">Dashboard</a>
+              <a href="/settings">Settings</a>
+              <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+            <form action="/notes" method="post" class="create-note">
+                <input type="text" placeholder="Title" name="title" id="title" maxlength="30" required> <br>
+                <textarea name="text" id="textarea" cols="21" rows="5" placeholder="Write note..." maxlength="120" required></textarea> <br>
+                <input type="submit" value="Add Note" id="add-note">
+            </form>
+    </div>
+    <div class="notes">
+         <% if (notes.length > 0) { %>
+             <% notes.forEach(note => { %>
+                 <div class="note">
+                 <div class="single-note">
+                     <h2 class="title"><%= note.title %></h2>
+                     <h4 class="text"><%= note.text %></h4>
+                     <form action="/<%= note._id %>" method="get">
+                        <input type="image" src="/images/trash.png" class="trashcan">
+                    </form>
+                    </div>
+                 </div>
+                 <% }); %>
+         <% } else { %>
+             <p class="no-notes">You don't have any notes.</p>
+         <% } %>
+    </div>
+    
+</body>
+</html>

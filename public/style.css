@@ -1,0 +1,299 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: white;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    color:#181818;
+}
+
+a {
+    text-decoration: none;
+    color: #181818;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    padding: 0;
+    margin: 15px 0;
+    color: #181818;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.responsive-nav {
+    display: none;
+}
+
+.logo {
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+    width: 35px;
+    height: 35px;
+    padding-right: 5%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 5%;
+    font-size: 1.1rem;
+}
+
+.link-3 {
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    padding-right: 5%;
+}
+
+.dropdown-options {
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: white;
+    display: none;
+    position: absolute;
+    overflow: auto;
+}
+  
+.dropdown:hover .dropdown-options {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.home-container {
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#header-text {
+    font-size: 3.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    margin-top: 15px;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.about-container {
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+}
+
+.login-form, .signup-form {
+    width: min(90%, 300px);
+    background-color: white;
+    margin: 10vh auto 0 auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.login-input {
+    margin: 10px 0 10px 0;
+    width: 77%;
+    height: 25px;
+}
+
+.login-button {
+    margin-top: 10px;
+    width: 80%;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.signup-redirect {
+    display: block;
+    padding: 15px 0;
+}
+
+.error-login {
+    color: red;
+} 
+
+.dashboard {
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    width: 100%;
+    margin: auto;
+    padding: 3% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-note {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    width: min(300px, 80%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+}
+
+#title {
+    width: 90%;
+    height: 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: auto;
+    outline: none;
+}
+
+#textarea {
+    resize: none;
+    outline: none;
+    border: 1px solid black;
+    width: 90%;
+    font-size: 1.1rem;
+    margin: 15px auto;
+}
+
+#add-note {
+    cursor: pointer;
+    margin: auto;
+    width: 90%;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.notes {
+    width: 100%;
+}
+
+.note {
+    width: 70%;
+    margin: 20px auto;
+    padding: 0 5%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+
+.single-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-note h4 {
+    padding: 0 15px;
+}
+
+.trashcan {
+    width: 30px;
+}
+
+.text, .title {
+    color: #686868;
+}
+
+.no-notes {
+    text-align: center;
+}
+
+footer {
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {
+    padding-top: 5vh;
+    text-align: center;
+    color: white;
+}
+
+/* RESPONSIVENESS */ 
+@media (max-width: 768px) {
+    .dashboard {
+        display: block;
+        padding: 5vh 0;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .responsive-nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-right: 5%;
+        font-size: 1.1rem;
+    }
+}
