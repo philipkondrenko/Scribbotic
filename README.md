@@ -2,7 +2,7 @@
 Scribbotic is a note taking web app that lets users delete and add notes. 
 
 # Features
-- User token authentication using JWT
+- User token authentication with JWT
 - Password hashing with bcrypt
 - Backend REST API built with Node.js and Express
 - Frontend built with CSS and EJS 
@@ -11,10 +11,9 @@ Scribbotic is a note taking web app that lets users delete and add notes.
 # Usage (Project still in production)
 1. Clone repository and install dependencies
 ```
-mkdir <FOLDER_NAME>
 git clone https://github.com/philipkondrenko/Scribbotic.git
-cd <FOLDER_NAME>/Note-App
-npm install express mongoose jsonwebtoken ejs dotenv cookie-parser body-parser bcryptjs
+cd Note-App
+npm install
 ```
 2. Create .env file for mongodb connection string, port number, and JWT key
 ```
