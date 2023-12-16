@@ -23,6 +23,6 @@ PORT=<PORT>
 MONGO_URL=<URL>
 JWT_SECRET=<KEY>
 ```
-Replace <URL> with mongodb connection string
-Replace <KEY> with unique key
-Replace <PORT> with port number
+- Replace <URL> with mongodb connection string
+- Replace <KEY> with unique key
+- Replace <PORT> with port number
