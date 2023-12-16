@@ -1,6 +1,9 @@
 # Scribbotic - A Note Taking Web App
 Scribbotic is a note taking web app that lets users delete and add notes. 
 
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+
+
 
 # Features
 - User token authentication with JWT
