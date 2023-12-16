@@ -20,7 +20,7 @@ git clone https://github.com/philipkondrenko/Scribbotic.git
 cd Note-App
 npm install
 ```
-2. Create .env file for mongodb connection string, port number, and JWT key
+2. Create .env file for mongodb connection string, port number, and JWT key variables
 ```
 PORT=<REPLACE_WITH_PORT_NUMBER>
 MONGO_URL=<REPLACE_WITH_URL>
