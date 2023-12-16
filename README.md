@@ -19,10 +19,7 @@ npm install
 ```
 2. Create .env file for mongodb connection string, port number, and JWT key
 ```
-PORT=<PORT>
-MONGO_URL=<URL>
-JWT_SECRET=<KEY>
+PORT=<REPLACE_WITH_PORT_NUMBER>
+MONGO_URL=<REPLACE_WITH_URL>
+JWT_SECRET=<REPLACE_WITH_JWT_KEY>
 ```
-- Replace <URL> with mongodb connection string
-- Replace <KEY> with unique key
-- Replace <PORT> with port number
