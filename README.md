@@ -26,3 +26,8 @@ PORT=<REPLACE_WITH_PORT_NUMBER>
 MONGO_URL=<REPLACE_WITH_URL>
 JWT_SECRET=<REPLACE_WITH_JWT_KEY>
 ```
+3. Start server
+```
+nodemon server.js
+```
+
