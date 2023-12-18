@@ -13,7 +13,7 @@ Scribbotic is a note taking web app that lets users add, delete, and view notes.
 - MongoDB used for storing users and notes
 
 
-# Usage (Project still in production)
+# Usage (Project still in development)
 1. Clone repository and install dependencies
 ```
 git clone https://github.com/philipkondrenko/Scribbotic.git
