@@ -17,7 +17,7 @@ Scribbotic is a note taking web app that lets users add, delete, and view notes.
 1. Clone repository and install dependencies
 ```
 git clone https://github.com/philipkondrenko/Scribbotic.git
-cd Note-App
+cd Scribbotic
 npm install
 ```
 2. Create .env file for mongodb connection string, port number, and JWT key variables
