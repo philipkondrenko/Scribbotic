@@ -6,7 +6,7 @@ Scribbotic is a note taking web app that lets users add, delete, and view notes.
 
 
 # Features
-- User token authentication with JWT
+- User authentication with JWT
 - Password hashing with bcrypt
 - Backend REST API built with Node.js and Express
 - Frontend built with CSS and EJS 
